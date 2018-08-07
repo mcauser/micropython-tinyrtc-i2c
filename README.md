@@ -20,7 +20,7 @@ SQ  | Square Wave     | Optional square wave or logic level output
 
 # DS1307 RTC Examples
 
-```
+```python
 # VCC-GND STM32F407VET6 on SPI3
 >>> from machine import I2C, Pin
 >>> i2c = I2C(3) # SCL=A8, SDA=C9
@@ -151,7 +151,7 @@ ds.datetime(now)
 
 # DS18B20 1-Wire Temperature Sensor Examples
 
-```
+```python
 >>> from machine import Pin
 >>> import onewire
 >>> ow = onewire.OneWire(Pin('A9'))
@@ -170,7 +170,7 @@ ds.datetime(now)
 
 # AT24C32N EEPROM Examples
 
-```
+```python
 >>> from machine import I2C, Pin
 >>> i2c = I2C(3) # SCL=A8, SDA=C9
 >>> i2c.scan()
@@ -237,7 +237,7 @@ Simply add a coin cell battery between GND + VBAT and use [pyb.RTC](http://docs.
 On the early pyboards, VBAT is the backup battery for the RTC. On the newer boards, VBAT is for powering the pyboard using a battery and the RTC battery is called Vbackup.
 - Dave Hylands on the [micropython forum](https://forum.micropython.org/viewtopic.php?f=6&t=229&p=15352&hilit=vbat#p15352)
 
-```
+```python
 # on the PyBoard or a STM32F407
 rtc = pyb.RTC()
 # set time
@@ -269,3 +269,7 @@ GND           | GND
 * [Binary-coded decimal](https://en.wikipedia.org/wiki/Binary-coded_decimal)
 * [DS1307 datasheet](https://datasheets.maximintegrated.com/en/ds/DS1307.pdf)
 * [AT24C32 datasheet](http://ww1.microchip.com/downloads/en/devicedoc/doc0336.pdf)
+
+## License
+
+Licensed under the [MIT License](http://opensource.org/licenses/MIT).
