@@ -248,6 +248,10 @@ rtc.datetime((2018, 3, 24, 6, 13, 45, 21, 0))
 print(rtc.datetime())
 ```
 
+## Troubleshooting
+
+If you are using the ESP32 [loboris port](https://github.com/loboris/MicroPython_ESP32_psRAM_LoBo), swap the `addrsize=16` for a `adrlen=2`.
+
 ## Parts
 
 * [TinyRTC I2C module](https://www.aliexpress.com/item/Tiny-RTC-I2C-modules-24C32-memory-DS1307-clock-RTC-module-without-battery-good-quality-low-price/2020927349.html) $0.53 AUD
