@@ -50,7 +50,7 @@ class DS1307(object):
         tz example:
         tz = 0 -> UTC Time
         tz = -10800 -> UTC-0300
-        tz = 3600 -> UTC+1000"""
+        tz = 3600 -> UTC+0100"""
         import ntptime
         import utime
 
