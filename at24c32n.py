@@ -1,6 +1,6 @@
 """
 MicroPython TinyRTC I2C Module, DS1307 RTC + AT24C32N EEPROM
-https://github.com/mcauser/micropython-tinyrtc
+https://github.com/mcauser/micropython-tinyrtc-i2c
 
 MIT License
 Copyright (c) 2018 Mike Causer
